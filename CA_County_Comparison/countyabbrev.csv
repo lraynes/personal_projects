@@ -1,0 +1,59 @@
+COUNTY,DISTRICT,ABBREV.
+Alameda,4,ALA
+Alpine,10,ALP
+Amador,10,AMA
+Butte,3,BUT
+Calaveras,10,CAL
+Colusa,3,COL
+Contra Costa,4,CC
+Del Norte,1,DN
+El Dorado,3,ED
+Fresno,6,FRE
+Glenn,3,GLE
+Humboldt,1,HUM
+Imperial,11,IMP
+Inyo,9,INY
+Kern,6,KER
+Kings,6,KIN
+Lake,1,LAK
+Lassen,2,LAS
+Los Angeles,7,LA
+Madera,6,MAD
+Marin,4,MRN
+Mariposa,10,MPA
+Mendocino,1,MEN
+Merced,10,MER
+Modoc,2,MOD
+Mono,9,MNO
+Monterey,5,MON
+Napa,4,NAP
+Nevada,3,NEV
+Orange,12,ORA
+Placer,3,PLA
+Plumas,2,PLU
+Riverside,8,RIV
+Sacramento,3,SAC
+San Benito,5,SBT
+San Bernardino,8,SBD
+San Diego,11,SD
+San Francisco,4,SF
+San Joaquin,10,SJ
+San Luis Obispo,5,SLO
+San Mateo,4,SM
+Santa Barbara,5,SB
+Santa Clara,4,SCL
+Santa Cruz,5,SCR
+Shasta,2,SHA
+Sierra,3,SIE
+Siskiyou,2,SIS
+Solano,4,SOL
+Sonoma,4,SON
+Stanislaus,10,STA
+Sutter,3,SUT
+Tehama,2,TEH
+Trinity,2,TRI
+Tulare,6,TUL
+Tuolumne,10,TUO
+Ventura,7,VEN
+Yolo,3,YOL
+Yuba,3,YUB

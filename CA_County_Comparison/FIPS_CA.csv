@@ -1,0 +1,542 @@
+countyname,FIPS
+California,06000
+Alameda County,06001
+Alpine County,06003
+Amador County,06005
+Butte County,06007
+Calaveras County,06009
+Colusa County,06011
+Contra Costa County,06013
+Del Norte County,06015
+El Dorado County,06017
+Fresno County,06019
+Glenn County,06021
+Humboldt County,06023
+Imperial County,06025
+Inyo County,06027
+Kern County,06029
+Kings County,06031
+Lake County,06033
+Lassen County,06035
+Los Angeles County,06037
+Madera County,06039
+Marin County,06041
+Mariposa County,06043
+Mendocino County,06045
+Merced County,06047
+Modoc County,06049
+Mono County,06051
+Monterey County,06053
+Napa County,06055
+Nevada County,06057
+Orange County,06059
+Placer County,06061
+Plumas County,06063
+Riverside County,06065
+Sacramento County,06067
+San Benito County,06069
+San Bernardino County,06071
+San Diego County,06073
+San Francisco County,06075
+San Joaquin County,06077
+San Luis Obispo County,06079
+San Mateo County,06081
+Santa Barbara County,06083
+Santa Clara County,06085
+Santa Cruz County,06087
+Shasta County,06089
+Sierra County,06091
+Siskiyou County,06093
+Solano County,06095
+Sonoma County,06097
+Stanislaus County,06099
+Sutter County,06101
+Tehama County,06103
+Trinity County,06105
+Tulare County,06107
+Tuolumne County,06109
+Ventura County,06111
+Yolo County,06113
+Yuba County,06115
+Adelanto city,06000
+Agoura Hills city,06000
+Alameda city,06000
+Albany city,06000
+Alhambra city,06000
+Aliso Viejo city,06000
+Alturas city,06000
+Amador City city,06000
+American Canyon city,06000
+Anaheim city,06000
+Anderson city,06000
+Angels city,06000
+Antioch city,06000
+Apple Valley town,06000
+Arcadia city,06000
+Arcata city,06000
+Arroyo Grande city,06000
+Artesia city,06000
+Arvin city,06000
+Atascadero city,06000
+Atherton town,06000
+Atwater city,06000
+Auburn city,06000
+Avalon city,06000
+Avenal city,06000
+Azusa city,06000
+Bakersfield city,06000
+Baldwin Park city,06000
+Banning city,06000
+Barstow city,06000
+Beaumont city,06000
+Bell city,06000
+Bellflower city,06000
+Bell Gardens city,06000
+Belmont city,06000
+Belvedere city,06000
+Benicia city,06000
+Berkeley city,06000
+Beverly Hills city,06000
+Big Bear Lake city,06000
+Biggs city,06000
+Bishop city,06000
+Blue Lake city,06000
+Blythe city,06000
+Bradbury city,06000
+Brawley city,06000
+Brea city,06000
+Brentwood city,06000
+Brisbane city,06000
+Buellton city,06000
+Buena Park city,06000
+Burbank city,06000
+Burlingame city,06000
+Calabasas city,06000
+Calexico city,06000
+California City city,06000
+Calimesa city,06000
+Calipatria city,06000
+Calistoga city,06000
+Camarillo city,06000
+Campbell city,06000
+Canyon Lake city,06000
+Capitola city,06000
+Carlsbad city,06000
+Carmel-by-the-Sea city,06000
+Carpinteria city,06000
+Carson city,06000
+Cathedral City city,06000
+Ceres city,06000
+Cerritos city,06000
+Chico city,06000
+Chino city,06000
+Chino Hills city,06000
+Chowchilla city,06000
+Chula Vista city,06000
+Citrus Heights city,06000
+Claremont city,06000
+Clayton city,06000
+Clearlake city,06000
+Cloverdale city,06000
+Clovis city,06000
+Coachella city,06000
+Coalinga city,06000
+Colfax city,06000
+Colma town,06000
+Colton city,06000
+Colusa city,06000
+Commerce city,06000
+Compton city,06000
+Concord city,06000
+Corcoran city,06000
+Corning city,06000
+Corona city,06000
+Coronado city,06000
+Corte Madera town,06000
+Costa Mesa city,06000
+Cotati city,06000
+Covina city,06000
+Crescent City city,06000
+Cudahy city,06000
+Culver City city,06000
+Cupertino city,06000
+Cypress city,06000
+Daly City city,06000
+Dana Point city,06000
+Danville town,06000
+Davis city,06000
+Delano city,06000
+Del Mar city,06000
+Del Rey Oaks city,06000
+Desert Hot Springs city,06000
+Diamond Bar city,06000
+Dinuba city,06000
+Dixon city,06000
+Dorris city,06000
+Dos Palos city,06000
+Downey city,06000
+Duarte city,06000
+Dublin city,06000
+Dunsmuir city,06000
+East Palo Alto city,06000
+Eastvale city,06000
+El Cajon city,06000
+El Centro city,06000
+El Cerrito city,06000
+Elk Grove city,06000
+El Monte city,06000
+El Paso de Robles (Paso Robles) city,06000
+El Segundo city,06000
+Emeryville city,06000
+Encinitas city,06000
+Escalon city,06000
+Escondido city,06000
+Etna city,06000
+Eureka city,06000
+Exeter city,06000
+Fairfax town,06000
+Fairfield city,06000
+Farmersville city,06000
+Ferndale city,06000
+Fillmore city,06000
+Firebaugh city,06000
+Folsom city,06000
+Fontana city,06000
+Fort Bragg city,06000
+Fort Jones city,06000
+Fortuna city,06000
+Foster City city,06000
+Fountain Valley city,06000
+Fowler city,06000
+Fremont city,06000
+Fresno city,06000
+Fullerton city,06000
+Galt city,06000
+Gardena city,06000
+Garden Grove city,06000
+Gilroy city,06000
+Glendale city,06000
+Glendora city,06000
+Goleta city,06000
+Gonzales city,06000
+Grand Terrace city,06000
+Grass Valley city,06000
+Greenfield city,06000
+Gridley city,06000
+Grover Beach city,06000
+Guadalupe city,06000
+Gustine city,06000
+Half Moon Bay city,06000
+Hanford city,06000
+Hawaiian Gardens city,06000
+Hawthorne city,06000
+Hayward city,06000
+Healdsburg city,06000
+Hemet city,06000
+Hercules city,06000
+Hermosa Beach city,06000
+Hesperia city,06000
+Hidden Hills city,06000
+Highland city,06000
+Hillsborough town,06000
+Hollister city,06000
+Holtville city,06000
+Hughson city,06000
+Huntington Beach city,06000
+Huntington Park city,06000
+Huron city,06000
+Imperial city,06000
+Imperial Beach city,06000
+Indian Wells city,06000
+Indio city,06000
+Industry city,06000
+Inglewood city,06000
+Ione city,06000
+Irvine city,06000
+Irwindale city,06000
+Isleton city,06000
+Jackson city,06000
+Jurupa Valley city,06000
+Kerman city,06000
+King City city,06000
+Kingsburg city,06000
+La Cañada Flintridge city,06000
+Lafayette city,06000
+Laguna Beach city,06000
+Laguna Hills city,06000
+Laguna Niguel city,06000
+Laguna Woods city,06000
+La Habra city,06000
+La Habra Heights city,06000
+Lake Elsinore city,06000
+Lake Forest city,06000
+Lakeport city,06000
+Lakewood city,06000
+La Mesa city,06000
+La Mirada city,06000
+Lancaster city,06000
+La Palma city,06000
+La Puente city,06000
+La Quinta city,06000
+Larkspur city,06000
+Lathrop city,06000
+La Verne city,06000
+Lawndale city,06000
+Lemon Grove city,06000
+Lemoore city,06000
+Lincoln city,06000
+Lindsay city,06000
+Live Oak city,06000
+Livermore city,06000
+Livingston city,06000
+Lodi city,06000
+Loma Linda city,06000
+Lomita city,06000
+Lompoc city,06000
+Long Beach city,06000
+Loomis town,06000
+Los Alamitos city,06000
+Los Altos city,06000
+Los Altos Hills town,06000
+Los Angeles city,06000
+Los Banos city,06000
+Los Gatos town,06000
+Loyalton city,06000
+Lynwood city,06000
+McFarland city,06000
+Madera city,06000
+Malibu city,06000
+Mammoth Lakes town,06000
+Manhattan Beach city,06000
+Manteca city,06000
+Maricopa city,06000
+Marina city,06000
+Martinez city,06000
+Marysville city,06000
+Maywood city,06000
+Mendota city,06000
+Menifee city,06000
+Menlo Park city,06000
+Merced city,06000
+Millbrae city,06000
+Mill Valley city,06000
+Milpitas city,06000
+Mission Viejo city,06000
+Modesto city,06000
+Monrovia city,06000
+Montague city,06000
+Montclair city,06000
+Montebello city,06000
+Monterey city,06000
+Monterey Park city,06000
+Monte Sereno city,06000
+Moorpark city,06000
+Moraga town,06000
+Moreno Valley city,06000
+Morgan Hill city,06000
+Morro Bay city,06000
+Mountain View city,06000
+Mount Shasta city,06000
+Murrieta city,06000
+Napa city,06000
+National City city,06000
+Needles city,06000
+Nevada City city,06000
+Newark city,06000
+Newman city,06000
+Newport Beach city,06000
+Norco city,06000
+Norwalk city,06000
+Novato city,06000
+Oakdale city,06000
+Oakland city,06000
+Oakley city,06000
+Oceanside city,06000
+Ojai city,06000
+Ontario city,06000
+Orange city,06000
+Orange Cove city,06000
+Orinda city,06000
+Orland city,06000
+Oroville city,06000
+Oxnard city,06000
+Pacifica city,06000
+Pacific Grove city,06000
+Palmdale city,06000
+Palm Desert city,06000
+Palm Springs city,06000
+Palo Alto city,06000
+Palos Verdes Estates city,06000
+Paradise town,06000
+Paramount city,06000
+Parlier city,06000
+Pasadena city,06000
+Patterson city,06000
+Perris city,06000
+Petaluma city,06000
+Pico Rivera city,06000
+Piedmont city,06000
+Pinole city,06000
+Pismo Beach city,06000
+Pittsburg city,06000
+Placentia city,06000
+Placerville city,06000
+Pleasant Hill city,06000
+Pleasanton city,06000
+Plymouth city,06000
+Point Arena city,06000
+Pomona city,06000
+Porterville city,06000
+Port Hueneme city,06000
+Portola city,06000
+Portola Valley town,06000
+Poway city,06000
+Rancho Cordova city,06000
+Rancho Cucamonga city,06000
+Rancho Mirage city,06000
+Rancho Palos Verdes city,06000
+Rancho Santa Margarita city,06000
+Red Bluff city,06000
+Redding city,06000
+Redlands city,06000
+Redondo Beach city,06000
+Redwood City city,06000
+Reedley city,06000
+Rialto city,06000
+Richmond city,06000
+Ridgecrest city,06000
+Rio Dell city,06000
+Rio Vista city,06000
+Ripon city,06000
+Riverbank city,06000
+Riverside city,06000
+Rocklin city,06000
+Rohnert Park city,06000
+Rolling Hills city,06000
+Rolling Hills Estates city,06000
+Rosemead city,06000
+Roseville city,06000
+Ross town,06000
+Sacramento city,06000
+St. Helena city,06000
+Salinas city,06000
+San Anselmo town,06000
+San Bernardino city,06000
+San Bruno city,06000
+San Buenaventura (Ventura) city,06000
+San Carlos city,06000
+San Clemente city,06000
+Sand City city,06000
+San Diego city,06000
+San Dimas city,06000
+San Fernando city,06000
+San Francisco city,06000
+San Gabriel city,06000
+Sanger city,06000
+San Jacinto city,06000
+San Joaquin city,06000
+San Jose city,06000
+San Juan Bautista city,06000
+San Juan Capistrano city,06000
+San Leandro city,06000
+San Luis Obispo city,06000
+San Marcos city,06000
+San Marino city,06000
+San Mateo city,06000
+San Pablo city,06000
+San Rafael city,06000
+San Ramon city,06000
+Santa Ana city,06000
+Santa Barbara city,06000
+Santa Clara city,06000
+Santa Clarita city,06000
+Santa Cruz city,06000
+Santa Fe Springs city,06000
+Santa Maria city,06000
+Santa Monica city,06000
+Santa Paula city,06000
+Santa Rosa city,06000
+Santee city,06000
+Saratoga city,06000
+Sausalito city,06000
+Scotts Valley city,06000
+Seal Beach city,06000
+Seaside city,06000
+Sebastopol city,06000
+Selma city,06000
+Shafter city,06000
+Shasta Lake city,06000
+Sierra Madre city,06000
+Signal Hill city,06000
+Simi Valley city,06000
+Solana Beach city,06000
+Soledad city,06000
+Solvang city,06000
+Sonoma city,06000
+Sonora city,06000
+South El Monte city,06000
+South Gate city,06000
+South Lake Tahoe city,06000
+South Pasadena city,06000
+South San Francisco city,06000
+Stanton city,06000
+Stockton city,06000
+Suisun City city,06000
+Sunnyvale city,06000
+Susanville city,06000
+Sutter Creek city,06000
+Taft city,06000
+Tehachapi city,06000
+Tehama city,06000
+Temecula city,06000
+Temple City city,06000
+Thousand Oaks city,06000
+Tiburon town,06000
+Torrance city,06000
+Tracy city,06000
+Trinidad city,06000
+Truckee town,06000
+Tulare city,06000
+Tulelake city,06000
+Turlock city,06000
+Tustin city,06000
+Twentynine Palms city,06000
+Ukiah city,06000
+Union City city,06000
+Upland city,06000
+Vacaville city,06000
+Vallejo city,06000
+Vernon city,06000
+Victorville city,06000
+Villa Park city,06000
+Visalia city,06000
+Vista city,06000
+Walnut city,06000
+Walnut Creek city,06000
+Wasco city,06000
+Waterford city,06000
+Watsonville city,06000
+Weed city,06000
+West Covina city,06000
+West Hollywood city,06000
+Westlake Village city,06000
+Westminster city,06000
+Westmorland city,06000
+West Sacramento city,06000
+Wheatland city,06000
+Whittier city,06000
+Wildomar city,06000
+Williams city,06000
+Willits city,06000
+Willows city,06000
+Windsor town,06000
+Winters city,06000
+Woodlake city,06000
+Woodland city,06000
+Woodside town,06000
+Yorba Linda city,06000
+Yountville city,06000
+Yreka city,06000
+Yuba City city,06000
+Yucaipa city,06000
+Yucca Valley town,06000
