@@ -319,7 +319,7 @@ fig = ff.create_choropleth(
 py.iplot(fig, filename='traffic')
 ```
 
-
+![CA Traffic 2016](https://plot.ly/~lauraraynes/6.embed)
 
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lauraraynes/6.embed" height="450px" width="900px"></iframe>
