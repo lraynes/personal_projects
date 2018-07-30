@@ -267,4 +267,4 @@ fig = ff.create_choropleth(
 py.image.save_as(fig, filename='traffic.png')
 ```
 
-[CA Traffic 2016](./traffic.png)
+![CA Traffic 2016](./traffic.png)
