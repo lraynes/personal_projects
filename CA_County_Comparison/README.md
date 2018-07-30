@@ -37,19 +37,6 @@ averages.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -103,19 +90,6 @@ abbrev.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -175,19 +149,6 @@ average_traffic.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -244,19 +205,6 @@ traffic_sort.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -316,12 +264,7 @@ fig = ff.create_choropleth(
     county_outline={'color': 'rgb(255,255,255)', 'width': 0.5}, show_state_data=False, show_hover=True,  
     centroid_marker={'opacity': 0}, asp=2.9, title='Highway Traffic 2016', legend_title='Average Number of Cars')
 
-py.iplot(fig, filename='traffic')
+py.image.save_as(fig, filename='traffic.png')
 ```
 
-![CA Traffic 2016](https://plot.ly/~lauraraynes/6.embed)
-
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lauraraynes/6.embed" height="450px" width="900px"></iframe>
-
-
+[CA Traffic 2016](./traffic.png)
