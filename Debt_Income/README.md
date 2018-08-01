@@ -15,10 +15,13 @@ from config import user, apikey
 plotly.tools.set_credentials_file(username=user, api_key=apikey)
 import plotly.plotly as py
 import plotly.figure_factory as ff
+from IPython.display import Image
 
 data = pd.read_csv("real_estate_db.csv", encoding='ISO-8859-1')
 all_fips = pd.read_csv("all-geocodes-v2016.csv", encoding='ISO-8859-1')
 ```
+
+First, I imported the data to examine what I had. I chose to use the column "rent_gt_40", which represents the percentage of residents whose rent exceeds 40% of their income. To graph this data in a choropleth, plotly requires a FIPS code (Federal Information Processing Standard), representing a unique state/county location. I cleaned the columns into a format that plotly would accept below.
 
 
 ```python
@@ -30,19 +33,6 @@ rent_40_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -107,65 +97,7 @@ rent_40_clean = rent_40_df.dropna(how='any')
 ```python
 grouped_data = rent_40_clean.groupby(["FIPS"])
 mean_rent_40 = grouped_data.mean().reset_index()
-mean_rent_40.head()
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>FIPS</th>
-      <th>rent_gt_40</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>01001</td>
-      <td>0.348900</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>01003</td>
-      <td>0.312674</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>01005</td>
-      <td>0.386574</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>01007</td>
-      <td>0.254480</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>01009</td>
-      <td>0.361050</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
 
 
 ```python
@@ -178,6 +110,8 @@ all_fips["FIPS"] = all_fips["State Code (FIPS)"].map(str) + all_fips["County Cod
 county_fips = all_fips[all_fips["County Code (FIPS)"] != "000"].reset_index()
 clean_fips = county_fips[["FIPS"]]
 ```
+
+Some counties were missing data. I chose to fill those counties with the median percentage value.
 
 
 ```python
@@ -194,19 +128,6 @@ merge_table.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -247,7 +168,9 @@ merge_table.head()
 
 
 
-I ran into several limitations with plotly at this stage. First, I encountered a runtime error due to such a large amount of data. I realized that I could not create one visualization of the full United States. I opted to break up the country into its main regions: Northeast, Midwest, South, and West. Additionally, I found that the sheer size of Alaska and distance of Hawaii forced the West plot to become too small to read. I made the decision to not include those two states.
+I ran into several limitations with plotly at this stage. 
+* First, I encountered a runtime error due to such a large amount of data. I realized that I could not create one visualization of the full United States. I opted to break up the country into its main regions: Northeast, Midwest, South, and West.
+* Additionally, I found that the sheer size of Alaska and distance of Hawaii forced the West plot to become too small to read. I made the decision to not include those two states in the West visualization.
 
 
 ```python
@@ -270,6 +193,8 @@ west = merge_table.loc[merge_table["FIPS"].str[:2].isin(
 
 # Northeast
 
+Connecticut, Maine, Massachusetts, New Hampshire, New Jersey, Vermont, New York, and Pennsylvania.
+
 
 ```python
 colorscale = ["00E53D","00E219","09DF00","2BDD00","4DDA00","6DD800","8DD500","ACD300",\
@@ -284,38 +209,17 @@ fig = ff.create_choropleth(fips=fips, values=values, binning_endpoints=endpts, s
                            colorscale=colorscale, county_outline={'color': 'rgb(255,255,255)', 'width': 0.25},
                           title='Northeast: Rent Exceeds 40% of Income',
                           legend_title='% of Population')
+py.image.save_as(fig, filename='northeast.png')
 py.iplot(fig, filename='northeast')
 ```
 
-    C:\Users\rayne\Anaconda3\lib\site-packages\plotly\plotly\plotly.py:224: UserWarning:
-    
-    Woah there! Look at all those points! Due to browser limitations, the Plotly SVG drawing functions have a hard time graphing more than 500k data points for line charts, or 40k points for other types of charts. Here are some suggestions:
-    (1) Use the `plotly.graph_objs.Scattergl` trace object to generate a WebGl graph.
-    (2) Trying using the image API to return an image instead of a graph URL
-    (3) Use matplotlib
-    (4) See if you can create your visualization with fewer data points
-    
-    If the visualization you're using aggregates points (e.g., box plot, histogram, etc.) you can disregard this warning.
-    
-    
-
-    The draw time for this plot will be slow for all clients.
-    
-
-    C:\Users\rayne\Anaconda3\lib\site-packages\plotly\api\v1\clientresp.py:40: UserWarning:
-    
-    Estimated Draw Time Too Long
-    
-    
-
-
-
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lauraraynes/20.embed" height="450px" width="900px"></iframe>
+![Northeast](northeast.png)
 
 
 
 # Midwest
+
+Illinois, Indiana, Michigan, Ohio, Wisconsin, Kansas, Minnesota, Missouri, Nebraska, North Dakota, and South Dakota.
 
 
 ```python
@@ -332,38 +236,18 @@ fig = ff.create_choropleth(fips=fips, values=values, binning_endpoints=endpts, s
                            colorscale=colorscale, county_outline={'color': 'rgb(255,255,255)', 'width': 0.25},
                           title='Midwest: Rent Exceeds 40% of Income',
                           legend_title='% of Population')
+py.image.save_as(fig, filename='midwest.png')
 py.iplot(fig, filename='midwest')
 ```
-
-    C:\Users\rayne\Anaconda3\lib\site-packages\plotly\plotly\plotly.py:224: UserWarning:
-    
-    Woah there! Look at all those points! Due to browser limitations, the Plotly SVG drawing functions have a hard time graphing more than 500k data points for line charts, or 40k points for other types of charts. Here are some suggestions:
-    (1) Use the `plotly.graph_objs.Scattergl` trace object to generate a WebGl graph.
-    (2) Trying using the image API to return an image instead of a graph URL
-    (3) Use matplotlib
-    (4) See if you can create your visualization with fewer data points
-    
-    If the visualization you're using aggregates points (e.g., box plot, histogram, etc.) you can disregard this warning.
-    
-    
-
-    The draw time for this plot will be slow for all clients.
-    
-
-    C:\Users\rayne\Anaconda3\lib\site-packages\plotly\api\v1\clientresp.py:40: UserWarning:
-    
-    Estimated Draw Time Too Long
-    
-    
+![Midwest](midwest.png)
 
 
-
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lauraraynes/14.embed" height="450px" width="900px"></iframe>
 
 
 
 # South
+
+Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, Virginia, West Virginia, Alabama, Kentucky, Mississippi, Tennessee, Arkansas, Louisiana, Oklahoma, and Texas.
 
 
 ```python
@@ -381,17 +265,18 @@ fig = ff.create_choropleth(fips=fips, values=values, binning_endpoints=endpts, s
                            colorscale=colorscale, county_outline={'color': 'rgb(255,255,255)', 'width': 0.25},
                           title='South: Rent Exceeds 40% of Income',
                           legend_title='% of Population')
+py.image.save_as(fig, filename='south.png')
 py.iplot(fig, filename='south')
 ```
 
+![South](south.png)
 
-
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lauraraynes/16.embed" height="450px" width="900px"></iframe>
 
 
 
 # West
+
+Arizona, Colorado, Idaho, Montana, Nevada, New Mexico, Utah, Wyoming, California, Oregon, and Washington.
 
 
 ```python
@@ -408,19 +293,20 @@ fig = ff.create_choropleth(fips=fips, values=values, binning_endpoints=endpts, s
                            colorscale=colorscale, county_outline={'color': 'rgb(255,255,255)', 'width': 0.25},
                           title='West: Rent Exceeds 40% of Income',
                           legend_title='% of Population')
+py.image.save_as(fig, filename='west.png')
 py.iplot(fig, filename='west')
 ```
+![West](west.png)
 
-
-
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lauraraynes/18.embed" height="450px" width="900px"></iframe>
 
 
 
 # Top 100 Counties
 
-After viewing these choropleths, my next question was: Which region is struggling the most? I proceeded to collect 100 counties with the highest debt-to-income ratio into a pie chart. It is clear that the South has the most counties in peril at 63 in total. The remaining regions combined make up the final third of the top 100. Unfortunately Plotly does not have the ability to show US territories which make up the next highest region at 16%.
+After viewing these choropleths, my next question was: 
+* Which region is struggling the most? 
+
+I proceeded to collect the 100 counties with the highest debt-to-income ratio into a pie chart. It is clear that the South has the most counties in peril at 63 in total. The remaining regions combined make up the final third of the top 100. Unfortunately Plotly does not have the ability to show US territories which make up the next highest region at 16%.
 
 
 ```python
@@ -464,5 +350,5 @@ plt.show()
 ```
 
 
-![png](output_21_0.png)
+![Pie Chart](output_23_0.png)
 
